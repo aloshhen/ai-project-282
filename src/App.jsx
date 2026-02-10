@@ -931,35 +931,6 @@ function Footer() {
   )
 }
 
-function SafeIcon({ name, size = 24, className = '', color }) {
-  // This is a placeholder - the actual SafeIcon is provided by the system
-  // We return a span with the icon name for now, system will replace with actual icon component
-  return (
-    <span
-      className={cn("inline-flex items-center justify-center", className)}
-      style={{ width: size, height: size, color }}
-      data-icon={name}
-    >
-      {name === 'menu' && '☰'}
-      {name === 'x' && '✕'}
-      {name === 'chevron-down' && '▼'}
-      {name === 'chevron-left' && '◀'}
-      {name === 'chevron-right' && '▶'}
-      {name === 'plus' && '+'}
-      {name === 'minus' && '−'}
-      {name === 'shopping-bag' && '👜'}
-      {name === 'user' && '👤'}
-      {name === 'globe' && '🌐'}
-      {name === 'facebook' && 'f'}
-      {name === 'instagram' && '📷'}
-      {name === 'twitter' && '🐦'}
-      {name === 'youtube' && '▶'}
-      {name === 'search' && '🔍'}
-      {name === 'arrow-right' && '→'}
-      {name === 'arrow-left' && '←'}
-    </span>
-  )
-}
 
 function App() {
   const [showAnnouncement, setShowAnnouncement] = useState(true)
